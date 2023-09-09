@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import language from "../../../public/language_icon.svg";
+import language from "../../../public/assets/language_icon.svg";
 import "node_modules/flag-icons/css/flag-icons.min.css";
 
 import {

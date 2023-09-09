@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import burger from "../../../public/navbar-burger.svg";
+import burger from "../../../public/assets/navbar-burger.svg";
 import "node_modules/flag-icons/css/flag-icons.min.css";
 
 import {
@@ -30,7 +30,7 @@ export default function NavBurger() {
         />
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-60">
-        <DropdownMenuLabel className="text-blue-600">
+        <DropdownMenuLabel className="text-orange-600">
           Free VPN
         </DropdownMenuLabel>
         <DropdownMenuSeparator />

@@ -10,44 +10,46 @@ export default function Navbar() {
     >
       <div className="flex items-center sm: justify-center">
         <a className="cursor-pointer ">
-          <h3 className="text-2xl font-medium text-blue-500 ml-5">Free VPN</h3>
+          <h3 className="text-2xl font-medium text-orange-500 ml-5">
+            Free VPN
+          </h3>
         </a>
       </div>
 
       <div className="items-center hidden space-x-8 md:flex">
         <a
-          className="flex text-gray-600 hover:text-blue-500
+          className="flex text-gray-600 hover:text-orange-500
                     cursor-pointer transition-colors duration-300"
         >
           Home
         </a>
 
         <a
-          className="flex text-gray-600 hover:text-blue-500
+          className="flex text-gray-600 hover:text-orange-500
                     cursor-pointer transition-colors duration-300"
         >
           Features
         </a>
 
         <a
-          className="flex text-gray-600 hover:text-blue-500
+          className="flex text-gray-600 hover:text-orange-500
                     cursor-pointer transition-colors duration-300"
         >
           How to connect
         </a>
 
         <a
-          className="flex text-gray-600 hover:text-blue-500
+          className="flex text-gray-600 hover:text-orange-500
                     cursor-pointer transition-colors duration-300"
         ></a>
 
         <a
-          className="flex text-gray-600 hover:text-blue-500
+          className="flex text-gray-600 hover:text-orange-500
                     cursor-pointer transition-colors duration-300"
         ></a>
 
         <a
-          className="flex text-gray-600 hover:text-blue-500
+          className="flex text-gray-600 hover:text-orange-500
                     cursor-pointer transition-colors duration-300"
         >
           About Us
