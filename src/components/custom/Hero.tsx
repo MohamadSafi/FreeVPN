@@ -23,7 +23,10 @@ const Hero = ({
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   return (
-    <div className="max-w-full px-8 xl:px-16 mx-auto" id="home">
+    <div
+      className="max-w-full lg:px-8 2xl:px-16 xl:py-16 py-8 xl:px-16 mx-auto"
+      id="home"
+    >
       <ScrollAnimationWrapper>
         <motion.div
           className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-6"
