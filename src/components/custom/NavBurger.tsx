@@ -15,7 +15,6 @@ import {
   DropdownMenuPortal,
   DropdownMenuSubContent,
 } from "@/components/ui/dropdown-menu";
-import LangDropDown from "./LangDropDown";
 
 export default function NavBurger() {
   return (
