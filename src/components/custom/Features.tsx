@@ -8,7 +8,7 @@ const features = [
   "● Always will be FREE",
   "● Adding more contries.",
   "● Providing more servers.",
-  "● Free VPN Mobile application.",
+  "● Free me VPN Mobile application.",
   "● No specific time limits.",
 ];
 
@@ -39,7 +39,7 @@ export default function Features() {
         >
           <Image
             src="/assets/HugeGlobal.svg"
-            alt="Free VPN"
+            alt="Free me VPN"
             quality={100}
             width={612}
             height={383}

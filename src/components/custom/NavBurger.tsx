@@ -30,7 +30,7 @@ export default function NavBurger() {
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-60">
         <DropdownMenuLabel className="text-orange-600">
-          Free VPN
+          Free me VPN
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuItem className=" sm:text-lg">Home</DropdownMenuItem>

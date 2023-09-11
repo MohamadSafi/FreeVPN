@@ -10,8 +10,8 @@ export default function Navbar() {
     >
       <div className="flex items-center sm: justify-center">
         <a className="cursor-pointer ">
-          <h3 className="text-2xl font-medium text-orange-500 ml-5">
-            Free VPN
+          <h3 className="text-2xl font-medium text-orange-600 ml-5">
+            Free me VPN
           </h3>
         </a>
       </div>
