@@ -5,10 +5,11 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const features = [
-  "Adding more contries.",
-  "Providing more servers.",
-  "Free VPN Mobile application.",
-  "No specific time limits.",
+  "● Always will be FREE",
+  "● Adding more contries.",
+  "● Providing more servers.",
+  "● Free VPN Mobile application.",
+  "● No specific time limits.",
 ];
 
 export default function Features() {
@@ -71,16 +72,16 @@ export default function Features() {
         <ScrollAnimationWrapper className="pt-16">
           <motion.h3
             variants={scrollAnimation}
-            className="text-4xl font-bold text-black-600 leading-relaxed w-full mx-auto text-center"
+            className="text-4xl font-bold text-black-600 leading-relaxed w-full mx-auto text-start"
           >
-            Future Plans:
+            What is our plans in the future?
           </motion.h3>
 
-          <div className="flex justify-center py-6">
+          <div className="flex justify-start py-6">
             <ul className="text-black-500 list-inside ml-8 ">
               {features.map((feature, index) => (
                 <motion.li
-                  className="relative circle-check custom-list text-start text-lg"
+                  className="relative custom-list text-start text-lg"
                   custom={{ duration: 2 + index }}
                   variants={scrollAnimation}
                   key={feature}
@@ -110,6 +111,35 @@ export default function Features() {
           </motion.div>
         </ScrollAnimationWrapper>
       </div>
+      <ScrollAnimationWrapper>
+        <motion.h3
+          variants={scrollAnimation}
+          className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed w-full mx-auto text-center"
+        >
+          How You can support us to grow?
+        </motion.h3>
+        <motion.p
+          className="leading-normal mb-4 mx-auto my-2 w-full text-center"
+          variants={scrollAnimation}
+        >
+          Our services will always be free but if you like what we are doing and
+          want us to continue please consider donation.
+        </motion.p>
+      </ScrollAnimationWrapper>
+      <ScrollAnimationWrapper>
+        <motion.div
+          variants={scrollAnimation}
+          className="flex justify-center py-8"
+        >
+          <button
+            className={
+              "py-2 lg:py-4 ml-4 px-12 lg:px-16 font-semibold rounded-lg bg-orange-400 hover:shadow-lg hover:shadow-orange-400 hover:text-lg"
+            }
+          >
+            Donate{" "}
+          </button>
+        </motion.div>
+      </ScrollAnimationWrapper>
     </main>
   );
 }
