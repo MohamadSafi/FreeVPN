@@ -6,7 +6,7 @@ export default function Navbar() {
     <nav
       className="flex md:justify-around lg:justify-around xl:justify-around 2xl:justify-around justify-between py-4 bg-white/80
             backdrop-blur-md shadow-md w-full
-            fixed top-0 left-0 right-0 z-10"
+            fixed top-0 left-0 right-0 z-20"
     >
       <div className="flex items-center sm: justify-center">
         <a className="cursor-pointer ">

@@ -24,7 +24,7 @@ const Hero = ({
 
   return (
     <div
-      className="max-w-full lg:px-8 2xl:px-16 xl:py-16 py-8 xl:px-16 mx-auto"
+      className="max-w-full lg:px-8 2xl:px-16 xl:pb-16 pb-8 xl:px-16 mx-auto"
       id="home"
     >
       <ScrollAnimationWrapper>
@@ -34,7 +34,7 @@ const Hero = ({
         >
           <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
             <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
-              Welcome to <strong>Free VPN</strong>.
+              Welcome to <strong>Free VPN</strong>
             </h1>
             <p className="text-black-500 mt-4 mb-6">
               Make sure you understand how to connect to open vpn using our
@@ -47,7 +47,7 @@ const Hero = ({
               variants={scrollAnimation}
             >
               <Image
-                src="/assets/Illustration1.png"
+                src="/assets/Illustration1.jpg"
                 alt="Free VPN"
                 quality={100}
                 width={612}
@@ -58,7 +58,7 @@ const Hero = ({
           </div>
         </motion.div>
       </ScrollAnimationWrapper>
-      <div className="relative w-full flex">
+      <div className="relative w-full flex pt-16">
         <ScrollAnimationWrapper className="rounded-lg w-full grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 pb-9 pt-2 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-100 bg-white-500 z-10">
           {listUser.map((listUsers, index) => (
             <motion.div
@@ -87,7 +87,7 @@ const Hero = ({
             </motion.div>
           ))}
           <motion.div variants={scrollAnimation}>
-            <Link href="#">
+            <Link href="/">
               <p className="text-orange-500  mb-6 mt-6 ml-2 text-center text-xl bg-orange-100 max-w-full hover:underline hover:bg-orange-50">
                 Help us for providing more Locations and Servers !
               </p>
