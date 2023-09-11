@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <main className="bg-orange-400 w-full pt-5 pb-36 pl-5">
+    <main className="bg-orange-400 w-full h-40 pt-5 pb-36 pl-5 shadow-inner shadow-white">
       <div className="flex justify-start flex-col">
         <p className="text-xl ">Free me VPN</p>
         <p className="text-xs mb-16">
