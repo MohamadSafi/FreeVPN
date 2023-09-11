@@ -4,9 +4,9 @@ export default function getScrollAnimation() {
       y: 150,
       opacity: 0,
     },
-    onscreen: ({ duration = 2 } = {}) => ({
+    onscreen: ({ duration = 1 } = {}) => ({
       y: 0,
-      opacity: 1,
+      opacity: 1.5,
       transition: {
         type: "spring",
         duration,
