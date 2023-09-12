@@ -34,7 +34,6 @@ export default function NavBurger() {
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuItem className=" sm:text-lg">Home</DropdownMenuItem>
-        <DropdownMenuItem className=" sm:text-lg">Features</DropdownMenuItem>
         <DropdownMenuItem className=" sm:text-lg">
           How to connect
         </DropdownMenuItem>

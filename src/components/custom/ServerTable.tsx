@@ -19,7 +19,7 @@ export default function ServerTable() {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   return (
-    <main className="pb-16 w-full">
+    <main className="pb-16 w-full" id="servers">
       <ScrollAnimationWrapper>
         <motion.div variants={scrollAnimation}>
           <Table>

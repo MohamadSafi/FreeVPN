@@ -16,7 +16,7 @@ export default function Features() {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   return (
-    <main className="py-16 w-full">
+    <main className="py-16 w-full" id="feature">
       <ScrollAnimationWrapper>
         <motion.h3
           variants={scrollAnimation}

@@ -1,7 +1,18 @@
+"use client";
+import React, { useState, useEffect } from "react";
 import LangDropDown from "@/components/custom/LangDropDown";
 import NavBurger from "@/components/custom/NavBurger";
+import Link from "next/link";
+import { Link as LinkScroll } from "react-scroll";
 
 export default function Navbar() {
+  const [activeLink, setActiveLink] = useState("");
+  const [scrollActive, setScrollActive] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScrollActive(window.scrollY > 20);
+    });
+  }, []);
   return (
     <nav
       className="flex md:justify-around lg:justify-around xl:justify-around 2xl:justify-around justify-between py-4 bg-white/80
@@ -17,19 +28,69 @@ export default function Navbar() {
       </div>
 
       <div className="items-center hidden space-x-8 md:flex">
-        <a
-          className="flex text-gray-600 hover:text-orange-500
-                    cursor-pointer transition-colors duration-300"
+        <LinkScroll
+          activeClass="active"
+          to="home"
+          spy={true}
+          smooth={true}
+          duration={1000}
+          onSetActive={() => {
+            setActiveLink("home");
+          }}
+          className={
+            "flex text-gray-600 hover:text-orange-500 cursor-pointer transition-colors duration-300" +
+            (activeLink === "home"
+              ? " text-orange-500 animation-active "
+              : " text-black-500 hover:text-orange-500 a")
+          }
         >
           Home
-        </a>
+        </LinkScroll>
 
-        <a
+        <LinkScroll
+          activeClass="active"
+          to="servers"
+          spy={true}
+          smooth={true}
+          duration={1000}
+          onSetActive={() => {
+            setActiveLink("servers");
+          }}
+          className={
+            "flex text-gray-600 hover:text-orange-500 cursor-pointer transition-colors duration-300" +
+            (activeLink === "servers"
+              ? " text-orange-500 animation-active "
+              : " text-black-500 hover:text-orange-500 ")
+          }
+        >
+          Servers
+        </LinkScroll>
+
+        {/* <a
           className="flex text-gray-600 hover:text-orange-500
                     cursor-pointer transition-colors duration-300"
         >
           Features
-        </a>
+        </a> */}
+
+        <LinkScroll
+          activeClass="active"
+          to="feature"
+          spy={true}
+          smooth={true}
+          duration={1000}
+          onSetActive={() => {
+            setActiveLink("feature");
+          }}
+          className={
+            "flex text-gray-600 hover:text-orange-500 cursor-pointer transition-colors duration-300" +
+            (activeLink === "feature"
+              ? " text-orange-500 animation-active "
+              : " text-black-500 hover:text-orange-500 ")
+          }
+        >
+          Feature
+        </LinkScroll>
 
         <a
           className="flex text-gray-600 hover:text-orange-500
