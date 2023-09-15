@@ -80,12 +80,12 @@ export default function Navbar() {
                     cursor-pointer transition-colors duration-300"
         ></a>
 
-        <a
+        {/* <a
           className="flex text-gray-600 hover:text-orange-500
                     cursor-pointer transition-colors duration-300"
         >
           About Us
-        </a>
+        </a> */}
       </div>
 
       <div className=" items-center cursor-pointer space-x-5 hover:opacity-25 hidden md:flex">
