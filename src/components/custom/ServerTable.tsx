@@ -51,7 +51,10 @@ export default function ServerTable() {
                   />
                 </TableCell>
                 <TableCell className="text-right">
-                  <Link href="" className="hover:underline">
+                  <Link
+                    href={{ pathname: "/server", query: "US" }}
+                    className="hover:underline"
+                  >
                     Click here
                   </Link>
                 </TableCell>
@@ -73,7 +76,10 @@ export default function ServerTable() {
                   />
                 </TableCell>
                 <TableCell className="text-right">
-                  <Link href="" className="hover:underline">
+                  <Link
+                    href={{ pathname: "/server", query: "UK" }}
+                    className="hover:underline"
+                  >
                     Click here
                   </Link>
                 </TableCell>
@@ -95,7 +101,10 @@ export default function ServerTable() {
                   />
                 </TableCell>
                 <TableCell className="text-right">
-                  <Link href="" className="hover:underline">
+                  <Link
+                    href={{ pathname: "/server", query: "NL" }}
+                    className="hover:underline"
+                  >
                     Click here
                   </Link>
                 </TableCell>
@@ -117,7 +126,10 @@ export default function ServerTable() {
                   />
                 </TableCell>
                 <TableCell className="text-right">
-                  <Link href="" className="hover:underline">
+                  <Link
+                    href={{ pathname: "/server", query: "RU" }}
+                    className="hover:underline"
+                  >
                     Click here
                   </Link>
                 </TableCell>
@@ -125,8 +137,8 @@ export default function ServerTable() {
 
               <TableRow>
                 <TableCell className="font-medium flex items-center gap-4">
-                  <span className="fi fi-sy p-3"></span>
-                  <p className="font-medium">Syria</p>
+                  <span className="fi fi-fr p-3"></span>
+                  <p className="font-medium">France</p>
                 </TableCell>
                 <TableCell className="text-red-600 font-bold">
                   OFFLINE
@@ -139,7 +151,10 @@ export default function ServerTable() {
                   />
                 </TableCell>
                 <TableCell className="text-right">
-                  <Link href="" className="hover:underline">
+                  <Link
+                    href={{ pathname: "/server", query: "FR" }}
+                    className="hover:underline"
+                  >
                     Click here
                   </Link>
                 </TableCell>

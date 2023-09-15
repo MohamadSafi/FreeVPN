@@ -66,13 +66,6 @@ export default function Navbar() {
           Servers
         </LinkScroll>
 
-        {/* <a
-          className="flex text-gray-600 hover:text-orange-500
-                    cursor-pointer transition-colors duration-300"
-        >
-          Features
-        </a> */}
-
         <LinkScroll
           activeClass="active"
           to="feature"
