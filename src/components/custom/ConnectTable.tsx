@@ -6,7 +6,7 @@ export default function ConnectTable() {
   const searchParams = useSearchParams();
   console.log(typeof `${searchParams}`);
   return (
-    <main>
+    <main className="w-2/6 ">
       <p>
         Download the file and use{" "}
         <a
@@ -18,19 +18,76 @@ export default function ConnectTable() {
         </a>{" "}
         client to connect.
       </p>
-      {`${searchParams}` === "US=" ? (
-        <p>US</p>
-      ) : `${searchParams}` === "UK=" ? (
-        <p>UK</p>
-      ) : `${searchParams}` === "NL=" ? (
-        <p>NL</p>
-      ) : `${searchParams}` === "RU=" ? (
-        <p>RU</p>
-      ) : `${searchParams}` === "FR=" ? (
-        <p>FR</p>
-      ) : (
-        <p>Error</p>
-      )}
+      <p className="text-center">
+        Be aware that the PIN will change every 12 hours to avoid any misuse to
+        our servers
+      </p>
+      <div className=" border-2 border-x-0 border-sky-300 m-6">
+        {`${searchParams}` === "US=" ? (
+          <div>
+            File:{" "}
+            <a href="/" className="text-blue-400 hover:underline">
+              UDP
+            </a>{" "}
+            |{" "}
+            <a href="/" className="text-blue-400 hover:underline">
+              TCP
+            </a>
+          </div>
+        ) : `${searchParams}` === "UK=" ? (
+          <div>
+            File:{" "}
+            <a href="/" className="text-blue-400 hover:underline">
+              UDP
+            </a>{" "}
+            |{" "}
+            <a href="/" className="text-blue-400 hover:underline">
+              TCP
+            </a>
+          </div>
+        ) : `${searchParams}` === "NL=" ? (
+          <div>
+            File:{" "}
+            <a href="/" className="text-blue-400 hover:underline">
+              UDP
+            </a>{" "}
+            |{" "}
+            <a href="/" className="text-blue-400 hover:underline">
+              TCP
+            </a>
+          </div>
+        ) : `${searchParams}` === "RU=" ? (
+          <div>
+            File:{" "}
+            <a href="/" className="text-blue-400 hover:underline">
+              UDP
+            </a>{" "}
+            |{" "}
+            <a href="/" className="text-blue-400 hover:underline">
+              TCP
+            </a>
+          </div>
+        ) : `${searchParams}` === "FR=" ? (
+          <p>FR</p>
+        ) : (
+          <div>
+            File:{" "}
+            <a href="/" className="text-blue-400 hover:underline">
+              UDP
+            </a>{" "}
+            |{" "}
+            <a href="/" className="text-blue-400 hover:underline">
+              TCP
+            </a>
+          </div>
+        )}
+        <p>username: FreeMEVPN</p>
+        <p>PIN: 123456789</p>
+      </div>
+      <p className="text-center">
+        Note: when the vpn server stops working come back to this page and chech
+        the PIN
+      </p>
     </main>
   );
 }
