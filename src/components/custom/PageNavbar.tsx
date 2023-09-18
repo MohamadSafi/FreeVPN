@@ -4,7 +4,7 @@ import LangDropDown from "@/components/custom/LangDropDown";
 import NavBurger from "@/components/custom/NavBurger";
 import Link from "next/link";
 
-export default function Navbar() {
+export default function PageNavbar() {
   const [activeLink, setActiveLink] = useState("");
   const [scrollActive, setScrollActive] = useState(false);
   useEffect(() => {
@@ -63,12 +63,17 @@ export default function Navbar() {
           Feature
         </Link>
 
-        <a
-          className="flex text-gray-600 hover:text-orange-500
-                    cursor-pointer transition-colors duration-300"
+        <Link
+          href={"/how-to-connect"}
+          className={
+            "flex text-gray-600 hover:text-orange-500 cursor-pointer transition-colors duration-300" +
+            (activeLink === "how-to-connect"
+              ? " text-orange-500 animation-active "
+              : " text-black-500 hover:text-orange-500 ")
+          }
         >
           How to connect
-        </a>
+        </Link>
 
         <a
           className="flex text-gray-600 hover:text-orange-500
