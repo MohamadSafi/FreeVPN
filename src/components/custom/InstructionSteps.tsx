@@ -4,6 +4,7 @@ import getScrollAnimation from "../../../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "../layout/ScrollAnimationWrapper";
 import { motion } from "framer-motion";
 import ServerTable from "./ServerTable";
+import Link from "next/link";
 export default function InstructionSteps() {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
@@ -123,13 +124,15 @@ export default function InstructionSteps() {
           variants={scrollAnimation}
           className="flex justify-center pt-20"
         >
-          <button
-            className={
-              "py-2 lg:py-4 ml-4 px-12 lg:px-16 font-semibold rounded-lg bg-orange-400 hover:shadow-lg hover:shadow-orange-400 hover:text-lg"
-            }
-          >
-            Donate{" "}
-          </button>
+          <Link href={"donate"}>
+            <button
+              className={
+                "py-2 lg:py-4 ml-4 px-12 lg:px-16 font-semibold rounded-lg bg-orange-400 hover:shadow-lg hover:shadow-orange-400 hover:text-lg"
+              }
+            >
+              Donate{" "}
+            </button>
+          </Link>
         </motion.div>
       </ScrollAnimationWrapper>
     </main>

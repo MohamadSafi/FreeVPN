@@ -3,6 +3,7 @@ import getScrollAnimation from "../../../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "../layout/ScrollAnimationWrapper";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const features = [
   "● Always will be FREE",
@@ -131,13 +132,15 @@ export default function Features() {
           variants={scrollAnimation}
           className="flex justify-center py-8"
         >
-          <button
-            className={
-              "py-2 lg:py-4 ml-4 px-12 lg:px-16 font-semibold rounded-lg bg-orange-400 hover:shadow-lg hover:shadow-orange-400 hover:text-lg"
-            }
-          >
-            Donate{" "}
-          </button>
+          <Link href={"/donate"}>
+            <button
+              className={
+                "py-2 lg:py-4 ml-4 px-12 lg:px-16 font-semibold rounded-lg bg-orange-400 hover:shadow-lg hover:shadow-orange-400 hover:text-lg"
+              }
+            >
+              Donate{" "}
+            </button>
+          </Link>
         </motion.div>
       </ScrollAnimationWrapper>
     </main>

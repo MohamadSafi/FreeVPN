@@ -87,13 +87,13 @@ const Hero = ({
             </motion.div>
           ))}
           <motion.div variants={scrollAnimation}>
-            <Link href="/">
+            <Link href="/donate">
               {/* <p className="text-orange-500  mb-6 mt-6 ml-2 text-center text-xl bg-orange-100 max-w-full hover:underline hover:bg-orange-50 rounded-xl">
                 Help us for providing more Locations and Servers !
               </p> */}
               <button
                 className={
-                  "py-2 lg:py-4 ml-4 px-12 lg:px-16 font-semibold rounded-lg bg-orange-400 hover:shadow-lg hover:shadow-orange-300"
+                  "py-2 lg:py-4 ml-4 px-12 lg:px-16 font-semibold rounded-lg bg-orange-400 hover:shadow-lg hover:shadow-orange-300 text-sm"
                 }
               >
                 Help us for providing more Locations and Servers !
