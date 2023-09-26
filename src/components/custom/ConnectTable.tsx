@@ -4,7 +4,31 @@ import { usePathname, useSearchParams } from "next/navigation";
 export default function ConnectTable() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  console.log(typeof `${searchParams}`);
+
+  const onUDPClick = (country: String) => {
+    fetch(`${country}-FreeMe.ovpn`).then((response) => {
+      response.blob().then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = `${country}-FreeMeVPN.ovpn`;
+        alink.click();
+      });
+    });
+  };
+
+  const onTCPClick = (country: String) => {
+    fetch(`${country}-FreeMe.ovpn`).then((response) => {
+      response.blob().then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = `${country}-FreeMeVPN.ovpn`;
+        alink.click();
+      });
+    });
+  };
+
   return (
     <main className="w-2/6 border-2">
       <p className="text-center">
@@ -26,59 +50,89 @@ export default function ConnectTable() {
         {`${searchParams}` === "US=" ? (
           <div>
             File:{" "}
-            <a href="/" className="text-blue-400 hover:underline">
+            <button
+              className="text-blue-400 hover:underline"
+              onClick={() => onUDPClick("US")}
+            >
               UDP
-            </a>{" "}
+            </button>{" "}
             |{" "}
-            <a href="/" className="text-blue-400 hover:underline">
+            <button
+              onClick={() => onTCPClick("US")}
+              className="text-blue-400 hover:underline"
+            >
               TCP
-            </a>
+            </button>
           </div>
         ) : `${searchParams}` === "UK=" ? (
           <div>
             File:{" "}
-            <a href="/" className="text-blue-400 hover:underline">
+            <button
+              onClick={() => onUDPClick("UK")}
+              className="text-blue-400 hover:underline"
+            >
               UDP
-            </a>{" "}
+            </button>{" "}
             |{" "}
-            <a href="/" className="text-blue-400 hover:underline">
+            <button
+              onClick={() => onTCPClick("UK")}
+              className="text-blue-400 hover:underline"
+            >
               TCP
-            </a>
+            </button>
           </div>
         ) : `${searchParams}` === "NL=" ? (
           <div>
             File:{" "}
-            <a href="/" className="text-blue-400 hover:underline">
+            <button
+              onClick={() => onUDPClick("NL")}
+              className="text-blue-400 hover:underline"
+            >
               UDP
-            </a>{" "}
+            </button>{" "}
             |{" "}
-            <a href="/" className="text-blue-400 hover:underline">
+            <button
+              onClick={() => onTCPClick("NL")}
+              className="text-blue-400 hover:underline"
+            >
               TCP
-            </a>
+            </button>
           </div>
         ) : `${searchParams}` === "RU=" ? (
           <div>
             File:{" "}
-            <a href="/" className="text-blue-400 hover:underline">
+            <button
+              onClick={() => onUDPClick("RU")}
+              className="text-blue-400 hover:underline"
+            >
               UDP
-            </a>{" "}
+            </button>{" "}
             |{" "}
-            <a href="/" className="text-blue-400 hover:underline">
+            <button
+              onClick={() => onTCPClick("RU")}
+              className="text-blue-400 hover:underline"
+            >
               TCP
-            </a>
+            </button>
           </div>
         ) : `${searchParams}` === "FR=" ? (
           <p>FR</p>
         ) : (
           <div>
             File:{" "}
-            <a href="/" className="text-blue-400 hover:underline">
+            <button
+              onClick={() => onUDPClick("FR")}
+              className="text-blue-400 hover:underline"
+            >
               UDP
-            </a>{" "}
+            </button>{" "}
             |{" "}
-            <a href="/" className="text-blue-400 hover:underline">
+            <button
+              onClick={() => onTCPClick("FR")}
+              className="text-blue-400 hover:underline"
+            >
               TCP
-            </a>
+            </button>
           </div>
         )}
         <p>username: FreeMeVPN</p>
