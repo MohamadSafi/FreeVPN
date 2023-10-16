@@ -6,7 +6,7 @@ export default function ConnectTable() {
   const searchParams = useSearchParams();
 
   const onUDPClick = (country: String) => {
-    fetch(`${country}-FreeMe.ovpn`).then((response) => {
+    fetch(`${country}-FreeMeVPN.ovpn`).then((response) => {
       response.blob().then((blob) => {
         const fileURL = window.URL.createObjectURL(blob);
         let alink = document.createElement("a");
@@ -64,18 +64,18 @@ export default function ConnectTable() {
               TCP
             </button>
           </div>
-        ) : `${searchParams}` === "UK=" ? (
+        ) : `${searchParams}` === "DE=" ? (
           <div>
             File:{" "}
             <button
-              onClick={() => onUDPClick("UK")}
+              onClick={() => onUDPClick("DE")}
               className="text-blue-400 hover:underline"
             >
               UDP
             </button>{" "}
             |{" "}
             <button
-              onClick={() => onTCPClick("UK")}
+              onClick={() => onTCPClick("DE")}
               className="text-blue-400 hover:underline"
             >
               TCP
@@ -135,7 +135,7 @@ export default function ConnectTable() {
             </button>
           </div>
         )}
-        <p>username: FreeMeVPN</p>
+        <p>username: freemevpn</p>
         <p>PIN: 123456789</p>
       </div>
       <p className="text-center">

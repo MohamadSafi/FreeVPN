@@ -62,8 +62,8 @@ export default function ServerTable() {
 
               <TableRow>
                 <TableCell className="font-medium flex items-center gap-4">
-                  <span className="fi fi-gb p-3"></span>
-                  <p className="font-medium">United Kingdom</p>
+                  <span className="fi fi-de p-3"></span>
+                  <p className="font-medium">Germany</p>
                 </TableCell>
                 <TableCell className="text-green-600 font-bold">
                   ONLINE
@@ -77,7 +77,7 @@ export default function ServerTable() {
                 </TableCell>
                 <TableCell className="text-right">
                   <Link
-                    href={{ pathname: "/server", query: "UK" }}
+                    href={{ pathname: "/server", query: "DE" }}
                     className="hover:underline"
                   >
                     Click here
@@ -94,7 +94,7 @@ export default function ServerTable() {
                   ONLINE
                 </TableCell>
                 <TableCell className="flex items-center gap-4">
-                  80%
+                  85%
                   <Progress
                     value={80}
                     className="bg-gray-300 text-green-600 w-24"
