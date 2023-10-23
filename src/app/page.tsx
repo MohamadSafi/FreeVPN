@@ -4,7 +4,6 @@ import Footer from "@/components/custom/Footer";
 import Hero from "@/components/custom/Hero";
 import Navbar from "@/components/custom/HomeNavbar";
 import ServerTable from "@/components/custom/ServerTable";
-import { appWithTranslation } from "next-i18next";
 
 const Home = () => {
   return (
@@ -21,4 +20,4 @@ const Home = () => {
     </main>
   );
 };
-export default appWithTranslation(Home);
+export default Home;
