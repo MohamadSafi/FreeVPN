@@ -40,7 +40,7 @@ export default function NavBurger() {
         {/* <DropdownMenuItem className=" sm:text-lg">About Us</DropdownMenuItem> */}
         <DropdownMenuSeparator />
 
-        <DropdownMenuSub>
+        {/* <DropdownMenuSub>
           <DropdownMenuSubTrigger>
             <span className="justify-center sm:text-lg">Language</span>
           </DropdownMenuSubTrigger>
@@ -57,7 +57,7 @@ export default function NavBurger() {
               </DropdownMenuItem>
             </DropdownMenuSubContent>
           </DropdownMenuPortal>
-        </DropdownMenuSub>
+        </DropdownMenuSub> */}
       </DropdownMenuContent>
     </DropdownMenu>
   );

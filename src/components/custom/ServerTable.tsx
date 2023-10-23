@@ -128,7 +128,8 @@ export default function ServerTable() {
                 <TableCell className="text-right">
                   <Link
                     href={{ pathname: "/server", query: "RU" }}
-                    className="hover:underline"
+                    // className="hover:underline"
+                    onClick={(event) => event.preventDefault()}
                   >
                     Click here
                   </Link>
@@ -153,7 +154,8 @@ export default function ServerTable() {
                 <TableCell className="text-right">
                   <Link
                     href={{ pathname: "/server", query: "FR" }}
-                    className="hover:underline"
+                    // className="hover:underline"
+                    onClick={(event) => event.preventDefault()}
                   >
                     Click here
                   </Link>

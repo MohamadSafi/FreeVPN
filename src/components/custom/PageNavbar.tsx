@@ -94,7 +94,7 @@ export default function PageNavbar() {
       </div>
 
       <div className=" items-center cursor-pointer space-x-5 hover:opacity-25 hidden md:flex">
-        <LangDropDown />
+        {/* <LangDropDown /> */}
       </div>
 
       <div className="flex curser-pointer hover:opacity-25 md:hidden lg:hidden xl:hidden 2xl:hidden mr-7">

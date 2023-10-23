@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../../../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "../layout/ScrollAnimationWrapper";
+import { useTranslation } from "next-i18next";
 
 const Hero = ({
   listUser = [

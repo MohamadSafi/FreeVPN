@@ -4,7 +4,9 @@ import Footer from "@/components/custom/Footer";
 import Hero from "@/components/custom/Hero";
 import Navbar from "@/components/custom/HomeNavbar";
 import ServerTable from "@/components/custom/ServerTable";
-export default function Home() {
+import { appWithTranslation } from "next-i18next";
+
+const Home = () => {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between pt-20">
       <div className="px-20">
@@ -18,4 +20,5 @@ export default function Home() {
       </div>
     </main>
   );
-}
+};
+export default appWithTranslation(Home);
