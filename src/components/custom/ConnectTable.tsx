@@ -136,7 +136,7 @@ export default function ConnectTable() {
           </div>
         )}
         <p>username: freemevpn</p>
-        <p>PIN: 123456789</p>
+        <p>PIN: 12345678</p>
       </div>
       <p className="text-center">
         Note: when the vpn server stops working come back to this page and check
