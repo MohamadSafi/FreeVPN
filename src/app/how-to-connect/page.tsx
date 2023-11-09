@@ -6,7 +6,7 @@ import PageNavbar from "@/components/custom/PageNavbar";
 export default function HowToConnect() {
   return (
     <main>
-      <div className="lg:mx-48 xl:mx-56 2xl:mx-56 3xl:mx-56 mb-24">
+      <div className="mx-2 lg:mx-48 xl:mx-56 2xl:mx-56 3xl:mx-56 mb-24">
         <PageNavbar />
         <InstructionHero />
         <InstructionSteps />
