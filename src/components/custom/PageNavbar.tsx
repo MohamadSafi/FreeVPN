@@ -21,14 +21,16 @@ export default function PageNavbar() {
     >
       <div className="flex items-center sm: justify-center  w-4/12">
         <a className="flex cursor-pointer w-4/12 xs:w-2/12 sm:w-2/12 md:w-2/12 lg:w-1/12 xl:w-1/12 2xl:w-1/12 flex-row">
-          <Image
-            src="/assets/freemevpn.png"
-            alt="Free me VPN"
-            quality={100}
-            width={5}
-            height={5}
-            layout="responsive"
-          />
+          <div className="w-10/12">
+            <Image
+              src="/assets/freemevpn.png"
+              alt="Free me VPN"
+              quality={100}
+              width={5}
+              height={5}
+              layout="responsive"
+            />
+          </div>
         </a>
 
         <a className="flex cursor-pointer xs:hidden sm:hidden md:hidedn lg:hidden xl:hidden 2xl:hidden">
