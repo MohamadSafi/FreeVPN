@@ -4,6 +4,7 @@ import LangDropDown from "@/components/custom/LangDropDown";
 import NavBurger from "@/components/custom/NavBurger";
 import Link from "next/link";
 import { Link as LinkScroll } from "react-scroll";
+import Image from "next/image";
 
 export default function Navbar() {
   const [activeLink, setActiveLink] = useState("");
@@ -19,9 +20,25 @@ export default function Navbar() {
             backdrop-blur-md shadow-md w-full
             fixed top-0 left-0 right-0 z-20"
     >
-      <div className="flex items-center sm: justify-center">
-        <a className="cursor-pointer ">
-          <h3 className="text-2xl font-medium text-orange-600 ml-5">
+      <div className="flex items-center sm: justify-center  w-4/12">
+        <a className="flex cursor-pointer w-4/12 xs:w-2/12 sm:w-2/12 md:w-2/12 lg:w-1/12 xl:w-1/12 2xl:w-1/12 flex-row">
+          <Image
+            src="/assets/freemevpn.png"
+            alt="Free me VPN"
+            quality={100}
+            width={5}
+            height={5}
+            layout="responsive"
+          />
+        </a>
+
+        <a className="flex cursor-pointer xs:hidden sm:hidden md:hidedn lg:hidden xl:hidden 2xl:hidden">
+          <h3 className="sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl text-lg text-orange-600 ml-1">
+            Free Me
+          </h3>
+        </a>
+        <a className="hidden cursor-pointer xs:flex sm:flex md:flex lg:flex xl:flex 2xl:flex">
+          <h3 className="sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl font-medium text-orange-600 ml-5">
             Free me VPN
           </h3>
         </a>

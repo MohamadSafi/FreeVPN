@@ -30,7 +30,7 @@ export default function ConnectTable() {
   };
 
   return (
-    <main className="w-2/6 border-2">
+    <main className="w-auto sm: md:w-2/6 lg:w-2/6 xl:w-2/6 2xl:w-2/6 border-2 mx-1">
       <p className="text-center">
         Download the file and use{" "}
         <a

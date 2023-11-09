@@ -19,7 +19,10 @@ export default function ServerTable() {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   return (
-    <main className="pb-16 w-full" id="servers">
+    <main
+      className="pb-16 md:w-full lg:w-full xl:w-full 2xl:w-full"
+      id="servers"
+    >
       <ScrollAnimationWrapper>
         <motion.div variants={scrollAnimation}>
           <Table>
@@ -30,7 +33,9 @@ export default function ServerTable() {
               <TableRow>
                 <TableHead>Country</TableHead>
                 <TableHead>Status</TableHead>
-                <TableHead>Health</TableHead>
+                <TableHead className="hidden sm:flex md:flex lg:flex xl:flex 2xl:flex">
+                  Health
+                </TableHead>
                 <TableHead className="text-right">Get Access</TableHead>
               </TableRow>
             </TableHeader>
@@ -43,11 +48,11 @@ export default function ServerTable() {
                 <TableCell className="text-green-600 font-bold">
                   ONLINE
                 </TableCell>
-                <TableCell className="flex items-center gap-4">
+                <TableCell className="items-center gap-4 hidden sm:flex md:flex lg:flex xl:flex 2xl:flex">
                   90%
                   <Progress
                     value={90}
-                    className="bg-gray-300 text-green-600 w-24"
+                    className="bg-gray-300 text-green-600 w-24 hidden sm:flex md:flex lg:flex xl:flex 2xl:flex"
                   />
                 </TableCell>
                 <TableCell className="text-right">
@@ -68,11 +73,11 @@ export default function ServerTable() {
                 <TableCell className="text-green-600 font-bold">
                   ONLINE
                 </TableCell>
-                <TableCell className="flex items-center gap-4">
+                <TableCell className="items-center gap-4 hidden sm:flex md:flex lg:flex xl:flex 2xl:flex">
                   75%
                   <Progress
                     value={75}
-                    className="bg-gray-300 text-green-600 w-24"
+                    className="bg-gray-300 text-green-600 w-24 hidden sm:flex md:flex lg:flex xl:flex 2xl:flex"
                   />
                 </TableCell>
                 <TableCell className="text-right">
@@ -93,11 +98,11 @@ export default function ServerTable() {
                 <TableCell className="text-green-600 font-bold">
                   ONLINE
                 </TableCell>
-                <TableCell className="flex items-center gap-4">
+                <TableCell className="items-center gap-4 hidden sm:flex md:flex lg:flex xl:flex 2xl:flex">
                   85%
                   <Progress
                     value={80}
-                    className="bg-gray-300 text-green-600 w-24"
+                    className="bg-gray-300 text-green-600 w-24 hidden sm:flex md:flex lg:flex xl:flex 2xl:flex"
                   />
                 </TableCell>
                 <TableCell className="text-right">
@@ -118,11 +123,11 @@ export default function ServerTable() {
                 <TableCell className="text-red-600 font-bold">
                   OFFLINE
                 </TableCell>
-                <TableCell className="flex items-center gap-4">
+                <TableCell className="items-center gap-4 hidden sm:flex md:flex lg:flex xl:flex 2xl:flex">
                   0%
                   <Progress
                     value={0}
-                    className="bg-gray-300 text-green-600 w-24"
+                    className="bg-gray-300 text-green-600 w-24 hidden sm:flex md:flex lg:flex xl:flex 2xl:flex"
                   />
                 </TableCell>
                 <TableCell className="text-right">
@@ -137,18 +142,18 @@ export default function ServerTable() {
               </TableRow>
 
               <TableRow>
-                <TableCell className="font-medium flex items-center gap-4">
+                <TableCell className="font-medium flex items-center gap-4 ">
                   <span className="fi fi-fr p-3"></span>
                   <p className="font-medium">France</p>
                 </TableCell>
                 <TableCell className="text-red-600 font-bold">
                   OFFLINE
                 </TableCell>
-                <TableCell className="flex items-center gap-4">
+                <TableCell className="items-center gap-4 hidden sm:flex md:flex lg:flex xl:flex 2xl:flex">
                   0%
                   <Progress
                     value={0}
-                    className="bg-gray-300 text-green-600 w-24"
+                    className="bg-gray-300 text-green-600 w-24 hidden sm:flex md:flex lg:flex xl:flex 2xl:flex"
                   />
                 </TableCell>
                 <TableCell className="text-right">

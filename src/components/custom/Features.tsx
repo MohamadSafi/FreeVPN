@@ -17,7 +17,10 @@ export default function Features() {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   return (
-    <main className="py-16 w-full" id="feature">
+    <main
+      className="am:py-16 md:py-16 lg:py-16 xl:py-16 2xl:py-16 w-full"
+      id="feature"
+    >
       <ScrollAnimationWrapper>
         <motion.h3
           variants={scrollAnimation}
@@ -35,7 +38,7 @@ export default function Features() {
       </ScrollAnimationWrapper>
       <ScrollAnimationWrapper className="flex justify-center">
         <motion.div
-          className="pt-12 w-9/12 h-7/12 px-8"
+          className="pt-12 sm:w-9/12 sm:h-7/12 sm:px-8 md:w-9/12 md:h-7/12 md:px-8 lg:w-9/12 lg:h-7/12 lg:px-8 xl:w-9/12 xl:h-7/12 xl:px-8 2xl:w-9/12 2xl:h-7/12 2xl:px-8"
           variants={scrollAnimation}
         >
           <Image
@@ -50,7 +53,7 @@ export default function Features() {
       </ScrollAnimationWrapper>
       <ScrollAnimationWrapper>
         <motion.div
-          className="flex flex-row justify-center gap-24"
+          className="hidden flex-row justify-center gap-24 md:flex lg:flex xl:flex 2xl:flex"
           variants={scrollAnimation}
         >
           <Image
@@ -69,7 +72,7 @@ export default function Features() {
           />
         </motion.div>
       </ScrollAnimationWrapper>
-      <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 items-center y-8 my-12">
+      <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 items-center y-8 sm:my-12 md:my-12 lg:my-12 xl:my-12 2xl:my-12">
         <ScrollAnimationWrapper className="pt-16">
           <motion.h3
             variants={scrollAnimation}
@@ -99,7 +102,7 @@ export default function Features() {
             </ul>
           </div>
         </ScrollAnimationWrapper>
-        <ScrollAnimationWrapper className="flex w-full justify-end">
+        <ScrollAnimationWrapper className="flex w-full justify-center sm:justify-end md:justify-end lg:justify-end xl:justify-end 2xl:justify-end">
           <motion.div className="w-10/12 h-10/12" variants={scrollAnimation}>
             <Image
               src="/assets/plans.jpg"

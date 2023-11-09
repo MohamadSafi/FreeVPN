@@ -25,12 +25,12 @@ const Hero = ({
 
   return (
     <div
-      className="max-w-full lg:px-8 2xl:px-16 xl:pb-16 pb-8 xl:px-16 mx-auto"
+      className="max-w-full lg:px-8 2xl:px-16 xl:pb-16 md:pb-8 sm:pb-8 xl:px-16"
       id="home"
     >
       <ScrollAnimationWrapper>
         <motion.div
-          className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-6"
+          className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 sm:py-6 md:py-6 lg:py-6 xl:py-6 2xl:py-6"
           variants={scrollAnimation}
         >
           <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
@@ -59,7 +59,7 @@ const Hero = ({
           </div>
         </motion.div>
       </ScrollAnimationWrapper>
-      <div className="relative w-full flex pt-16">
+      <div className="relative w-full flex pt-2 md:pt-16 lg:pt-16 xl:pt-16 2xl:pt-16">
         <ScrollAnimationWrapper className="rounded-lg w-full grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 pb-9 pt-2 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-100 bg-white-500 z-10">
           {listUser.map((listUsers, index) => (
             <motion.div
@@ -94,7 +94,7 @@ const Hero = ({
               </p> */}
               <button
                 className={
-                  "py-2 lg:py-4 ml-4 px-12 lg:px-16 font-semibold rounded-lg bg-orange-400 hover:shadow-lg hover:shadow-orange-300 text-sm"
+                  "py-2 lg:py-4 sm:ml-4 md:ml-4 lg:ml-4 xl:ml-4 2xl:ml-4 px-12 lg:px-16 font-semibold rounded-lg bg-orange-400 hover:shadow-lg hover:shadow-orange-300 text-sm"
                 }
               >
                 Help us for providing more Locations and Servers !
