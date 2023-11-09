@@ -1,7 +1,9 @@
 "use client";
 import Image from "next/image";
+import React, { useState, useEffect } from "react";
 import burger from "../../../public/assets/navbar-burger.svg";
 import "node_modules/flag-icons/css/flag-icons.min.css";
+import Link from "next/link";
 
 import {
   DropdownMenu,
@@ -33,10 +35,15 @@ export default function NavBurger() {
           Free me VPN
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
-        <DropdownMenuItem className=" sm:text-lg">Home</DropdownMenuItem>
-        <DropdownMenuItem className=" sm:text-lg">
-          How to connect
-        </DropdownMenuItem>
+        <Link href={"/"}>
+          <DropdownMenuItem className=" sm:text-lg">Home</DropdownMenuItem>
+        </Link>
+
+        <Link href={"/how-to-connect"}>
+          <DropdownMenuItem className=" sm:text-lg">
+            How to connect
+          </DropdownMenuItem>
+        </Link>
         {/* <DropdownMenuItem className=" sm:text-lg">About Us</DropdownMenuItem> */}
         <DropdownMenuSeparator />
 
