@@ -8,6 +8,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Free Me VPN",
   description: "Free Me VPN is a Free vpn App",
+  alternates: {
+    canonical: "https://freemevpn.com/",
+  },
 };
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
