@@ -56,13 +56,13 @@ export default function ConnectTable() {
             >
               UDP
             </button>{" "}
-            |{" "}
+            {/* |{" "}
             <button
               onClick={() => onTCPClick("US")}
               className="text-blue-400 hover:underline"
             >
               TCP
-            </button>
+            </button> */}
           </div>
         ) : `${searchParams}` === "DE=" ? (
           <div>
@@ -73,13 +73,13 @@ export default function ConnectTable() {
             >
               UDP
             </button>{" "}
-            |{" "}
+            {/* |{" "}
             <button
               onClick={() => onTCPClick("DE")}
               className="text-blue-400 hover:underline"
             >
               TCP
-            </button>
+            </button> */}
           </div>
         ) : `${searchParams}` === "NL=" ? (
           <div>
@@ -90,13 +90,13 @@ export default function ConnectTable() {
             >
               UDP
             </button>{" "}
-            |{" "}
+            {/* |{" "}
             <button
               onClick={() => onTCPClick("NL")}
               className="text-blue-400 hover:underline"
             >
               TCP
-            </button>
+            </button> */}
           </div>
         ) : `${searchParams}` === "RU=" ? (
           <div>
@@ -107,13 +107,13 @@ export default function ConnectTable() {
             >
               UDP
             </button>{" "}
-            |{" "}
+            {/* |{" "}
             <button
               onClick={() => onTCPClick("RU")}
               className="text-blue-400 hover:underline"
             >
               TCP
-            </button>
+            </button> */}
           </div>
         ) : `${searchParams}` === "FR=" ? (
           <p>FR</p>
@@ -126,13 +126,13 @@ export default function ConnectTable() {
             >
               UDP
             </button>{" "}
-            |{" "}
+            {/* |{" "}
             <button
               onClick={() => onTCPClick("FR")}
               className="text-blue-400 hover:underline"
             >
               TCP
-            </button>
+            </button> */}
           </div>
         )}
         <p>username: freemevpn</p>
