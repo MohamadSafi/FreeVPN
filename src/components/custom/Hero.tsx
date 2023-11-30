@@ -15,7 +15,7 @@ const Hero = ({
       icon: "/assets/Icon/gridicons_location.svg",
     },
     {
-      name: "Server",
+      name: "Servers",
       number: "50",
       icon: "/assets/Icon/bx_bxs-server.svg",
     },
@@ -35,11 +35,13 @@ const Hero = ({
         >
           <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
             <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
-              Welcome to <strong>Free me VPN</strong>
+              <strong>Free Me VPN</strong>
             </h1>
             <p className="text-black-500 mt-4 mb-6">
-              Make sure you understand how to connect to open vpn using our
-              servers and keep your eyes on the PIN code.
+              Free Me VPN is a free vpn service that provide secure connection
+              with the help of OpenVPN client, make sure you understand how to
+              connect with open vpn using our servers and keep your eyes on the
+              PIN code to enjoy unlimited free vpn.
             </p>
           </div>
           <div className="flex w-full">
@@ -49,7 +51,7 @@ const Hero = ({
             >
               <Image
                 src="/assets/Illustration1.jpg"
-                alt="Free me VPN"
+                alt="Free me VPN Best Free Secure vpn"
                 quality={100}
                 width={612}
                 height={383}
@@ -73,7 +75,7 @@ const Hero = ({
                   <Image
                     src={listUsers.icon}
                     className="h-6 w-6"
-                    alt=""
+                    alt="Free me VPN Best Fast Free Secure vpn"
                     width={400}
                     height={400}
                   />
@@ -97,7 +99,7 @@ const Hero = ({
                   "py-2 lg:py-4 sm:ml-4 md:ml-4 lg:ml-4 xl:ml-4 2xl:ml-4 px-12 lg:px-16 font-semibold rounded-lg bg-orange-400 hover:shadow-lg hover:shadow-orange-300 text-sm"
                 }
               >
-                Help us for providing more Locations and Servers !
+                Help us for providing more free Locations and Servers !
               </button>
             </Link>
           </motion.div>

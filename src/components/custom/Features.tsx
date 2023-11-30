@@ -6,11 +6,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 const features = [
-  "● Always will be FREE",
-  "● Adding more contries.",
-  "● Providing more servers.",
-  "● Free me VPN Mobile application.",
-  "● No specific time limits.",
+  "● Free Me VPN will always be FREE, SECURE, and FAST",
+  "● Providing more free servers on Free Me VPN.",
+  "● Adding more contries to Free Me VPN.",
+  "● Free Me VPN Mobile application.",
+  "● No limits with Free Me VPN.",
 ];
 
 export default function Features() {
@@ -26,7 +26,7 @@ export default function Features() {
           variants={scrollAnimation}
           className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed w-full mx-auto text-center"
         >
-          We are Trying to expand our services
+          We are Trying to expand our services in Free Me VPN
         </motion.h3>
         <motion.p
           className="leading-normal mb-4 mx-auto my-2 w-full text-center"
@@ -34,6 +34,13 @@ export default function Features() {
         >
           So we need your help either by support or by using our services until
           we grow to match our plans!
+        </motion.p>
+        <motion.p
+          className="leading-normal mb-4 mx-auto my-2 w-full text-center"
+          variants={scrollAnimation}
+        >
+          Free Me VPN always promise you with the best fast and free vpn
+          service.
         </motion.p>
       </ScrollAnimationWrapper>
       <ScrollAnimationWrapper className="flex justify-center">
@@ -43,7 +50,7 @@ export default function Features() {
         >
           <Image
             src="/assets/HugeGlobal.svg"
-            alt="Free me VPN"
+            alt="Free me VPN Best Fast Free Secure vpn"
             quality={100}
             width={612}
             height={383}
@@ -60,14 +67,14 @@ export default function Features() {
             width="150"
             height="150"
             src="/assets/Icon/app-store.svg"
-            alt="google-play"
+            alt="Free me VPN Best Fast Free Secure vpn"
             className="opacity-50"
           />
           <Image
             width="150"
             height="150"
             src="/assets/Icon/google-play.svg"
-            alt="apple-app-store--v1"
+            alt="Free me VPN Best Fast Free Secure vpn"
             className="opacity-50"
           />
         </motion.div>
@@ -78,7 +85,7 @@ export default function Features() {
             variants={scrollAnimation}
             className="text-4xl font-bold text-black-600 leading-relaxed w-full mx-auto text-start"
           >
-            What is our plans in the future?
+            What is our plans in Free Me VPN?
           </motion.h3>
 
           <div className="flex justify-start py-6">
@@ -106,7 +113,7 @@ export default function Features() {
           <motion.div className="w-10/12 h-10/12" variants={scrollAnimation}>
             <Image
               src="/assets/plans.jpg"
-              alt="VPN Illustrasi"
+              alt="Free me VPN Best Fast Free Secure vpn"
               layout="responsive"
               quality={100}
               height={414}
@@ -120,14 +127,21 @@ export default function Features() {
           variants={scrollAnimation}
           className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed w-full mx-auto text-center"
         >
-          How You can support us to grow?
+          How You can support Free Me VPN to grow?
         </motion.h3>
         <motion.p
           className="leading-normal mb-4 mx-auto my-2 w-full text-center"
           variants={scrollAnimation}
         >
-          Our services will always be free but if you like what we are doing and
-          want us to continue please consider donation.
+          Free Me VPN Promise you forever with the best free vpn FAST, FREE,
+          SECURE !
+        </motion.p>
+        <motion.p
+          className="leading-normal mb-4 mx-auto my-2 w-full text-center"
+          variants={scrollAnimation}
+        >
+          Free Me VPN will always be free but if you like what we are doing and
+          want Free Me VPN to continue please consider donation.
         </motion.p>
       </ScrollAnimationWrapper>
       <ScrollAnimationWrapper>
@@ -141,7 +155,7 @@ export default function Features() {
                 "py-2 lg:py-4 ml-4 px-12 lg:px-16 font-semibold rounded-lg bg-orange-400 hover:shadow-lg hover:shadow-orange-400 hover:text-lg"
               }
             >
-              Donate{" "}
+              Donate to Free Me VPN{" "}
             </button>
           </Link>
         </motion.div>

@@ -6,8 +6,9 @@ import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Free Me VPN",
-  description: "Free Me VPN is a Free vpn App",
+  title: "Free Me VPN - The Best Free VPN Service | Free and Fast",
+  description:
+    "Discover ultimate and fast freedom with Free Me VPN – your forever-free, Best secure VPN service, ensuring free online safety at no cost with Free Me VPN.",
   alternates: {
     canonical: "https://freemevpn.com/",
   },

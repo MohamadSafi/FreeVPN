@@ -27,7 +27,8 @@ export default function ServerTable() {
         <motion.div variants={scrollAnimation}>
           <Table>
             <TableCaption>
-              Choose a country and download the .ovpn file to connect
+              Choose a country and download the .ovpn file to connect and enjoy
+              Free Me VPN
             </TableCaption>
             <TableHeader>
               <TableRow>

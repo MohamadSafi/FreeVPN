@@ -41,7 +41,7 @@ export default function Navbar() {
         </a>
         <a className="hidden cursor-pointer xs:flex sm:flex md:flex lg:flex xl:flex 2xl:flex">
           <h3 className="sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl font-medium text-orange-600 ml-5">
-            Free me VPN
+            Free Me VPN
           </h3>
         </a>
       </div>
